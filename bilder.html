@@ -8,18 +8,41 @@
 </head>
 <body>
 
-    <nav class="nav-list">
-        <a class="nav-brand" href="index.html">Mat til Gaza</a>
-        <ul class="nav-list">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="bakgrunn.html">Bakgrunn</a></li>
-            <li class="active" aria-current="page"><a href="bilder.html">Bilder</a></li>
-        </ul>
-    </nav>
+    <header>
 
-    <main>
+        <nav>
+            <ul class="sidebar">
+                <li class="closePosition" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="antiquewhite"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="bakgrunn.html">Bakgrunn</a></li>
+                <li class="active"><a href="bilder.html" aria-current="page">Bilder</a></li>
+
+            </ul>
+            <ul>
+                <a class="nav-brand" href="index.html" style="color:antiquewhite">Mat til Gaza</a>
+                <li class="hideOnMobile"><a href="index.html">Forside</a></li>
+                <li class="hideOnMobile"><a href="bakgrunn.html">Bakgrunn</a></li>
+                <li class="active hideOnMobile"><a href="bilder.html" aria-current="page">Bilder</a></li>
+                <li class="hideHamburger" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="white"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
         
+    </header>
+
+    <main class="main-container">
+        <div class="">
+            <section>Bilder</section>
+            <section>section 2</section>
+            <section>section 3</section>
+            <section>section 4</section>
+        </div>
     </main>
+
+    <div class="footer">
+        <h3 class="">mattilgaza@gmail.com</h3>
+    </div>
+
+    <script src="assets/scripts.js"></script>
 
 </body>
 </html>
