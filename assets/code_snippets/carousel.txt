@@ -1,0 +1,19 @@
+            <section class="section3">
+                
+                <div class="carousel">
+                    <button class="carousel-button prev"><p><i class="arrow left"></i></p></button>
+                    <button class="carousel-button next"><p><i class="arrow right"></i></p></button>
+                    <ul>
+                        <li class="slide" data-active>
+                            <img src="assets/statics/images/0a45856a-3d34-4123-8b32-12dea8040c59.jpeg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/statics/images/0f9d6268-b014-4d40-80f0-94b1f53363e6.jpeg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/statics/images/13f24e14-ae0b-4322-a38c-f4683ea64166.jpeg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            
+            </section>
