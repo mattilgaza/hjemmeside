@@ -41,21 +41,6 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 
-/* nav {
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-} */
-
 nav ul {
   display: flex;
   align-items: center;
@@ -86,6 +71,95 @@ nav a {
   color: lightgray;
 }
 
+nav a:hover {
+  color: #fff;
+}
+
+/* Bilder dropdown < */
+
+nav ul li {
+  position: relative; /* Ensure the dropdown is positioned relative to its parent */
+}
+
+nav ul li ul.dropdown {
+  display: none; /* Hide dropdown initially */
+  position: absolute; /* Position dropdown relative to parent */
+  top: 100%; /* Place below the parent menu item */
+  left: 0; /* Align with the left edge of the parent menu item */
+  background: #666; /* Dropdown background color */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 0.5rem 0; /* Space around dropdown items */
+  z-index: 999; /* Ensure it appears above other elements */
+}
+
+nav ul li:hover ul.dropdown {
+  display: block; /* Show dropdown on hover */
+  background-color: #444;
+  width: 100%;
+  border-radius: 0rem;
+}
+
+/* make it so border-radius of nav ul li is 0 when hover */
+
+nav ul li:hover {
+  border-radius: 0rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+nav ul li ul.dropdown li {
+  display: block; /* Ensure items stack vertically */
+  padding: 0.5rem 1rem; /* Space inside dropdown items */
+}
+
+nav ul li ul.dropdown li:hover {
+  background-color: #555; /* Hover background color */
+}
+
+nav ul li ul.dropdown li a {
+  color: lightgray; /* Text color */
+  font-size: 1rem; /* Font size */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Ensure link occupies full width of the item */
+}
+
+nav ul li ul.dropdown li a:hover {
+  color: #fff; /* Hover text color */
+}
+
+/* Bilder dropdown > */
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+img {
+  width: 20rem;
+  max-width: 1200px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  object-position: top;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.img-position-center {
+  object-position: center;
+}
+
+.img-custom1 {
+  object-position: 50% 30%;
+}
+
 .nav-brand {
   font-size: 2.5rem;
   font-weight: 100;
@@ -107,6 +181,7 @@ nav a {
 section {
   background-color: var(--card-bg);
   padding: 2rem;
+  margin: 1rem;
   border-radius: 0.5rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   place-items: center;
@@ -183,11 +258,6 @@ section {
   border-radius: 0.5rem;
 }
 
-/* .closePosition {
-  margin: -4rem 0;
-  padding: 0;
-} */
-
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -245,53 +315,3 @@ button:hover {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
-
-.carousel {
-  position: relative;
-  max-width: 48rem;
-  margin: 0 auto;
-}
-
-/* .slider {
-  display: flex;
-  aspect-ratio: 16 / 11;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 1rem;
-  -webkit-overflow-scrolling: touch;
-}
-
-.slider::-webkit-scrollbar {
-  display: none;
-}
-
-.slider img {
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-}
-
-.slider-nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.slider-nav a {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-  opacity: 1;
-} */
