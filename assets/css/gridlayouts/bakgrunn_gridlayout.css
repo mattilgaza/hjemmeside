@@ -25,7 +25,8 @@
 .section5,
 .section6,
 .section7,
-.section8 {
+.section8,
+.section9 {
   grid-column: 1 / span 2; /* Span across both columns */
   padding: 1rem;
 }
@@ -51,7 +52,8 @@
   .section5,
   .section6,
   .section7,
-  .section8 {
+  .section8,
+  .section9 {
     grid-column: 1; /* Full width for all sections */
   }
 }
