@@ -139,8 +139,8 @@ nav ul li ul.dropdown li a:hover {
 
 img {
   width: 100%;
-  max-width: 1200px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 600px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   object-fit: cover;
@@ -158,6 +158,59 @@ img:hover {
 
 .img-custom1 {
   object-position: 50% 30%;
+}
+.img-custom2 {
+  object-position: 50% 20%;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.image-stack {
+  position: relative; /* Ensure stacking context */
+  width: max-content; /* Adjust to content width */
+  margin-left: 2rem; /* Center the stack */
+}
+
+.stacked-image {
+  position: absolute; /* Allows overlapping */
+  width: 100px; /* Adjust image size as needed */
+  height: 150px; /* Adjust image size as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.image-bottom {
+  top: 20px; /* Adjust vertical shift */
+  left: 80px; /* Adjust horizontal shift */
+  z-index: 1; /* Stacking order */
+}
+
+.image-middle {
+  top: 10px;
+  left: 40px;
+  z-index: 2;
+}
+
+.image-top {
+  top: 0;
+  left: 0;
+  z-index: 3; /* Ensures it’s on top */
+}
+
+.stacked-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .nav-brand {
