@@ -177,7 +177,7 @@ img:hover {
 .image-stack {
   position: relative; /* Ensure stacking context */
   width: max-content; /* Adjust to content width */
-  margin-left: 2rem; /* Center the stack */
+  margin-left: 2rem;
 }
 
 .stacked-image {
@@ -211,6 +211,12 @@ img:hover {
 .stacked-image:hover {
   transform: scale(1.05); /* Slight zoom effect */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 950px) {
+  .image-stack {
+    margin-left: 4rem;
+  }
 }
 
 .nav-brand {
