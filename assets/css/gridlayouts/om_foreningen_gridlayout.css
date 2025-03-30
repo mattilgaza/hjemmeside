@@ -1,0 +1,35 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  grid-template-areas:
+    "row1"
+    "row2"
+    "row3"
+    "row4";
+}
+
+.section1 {
+  grid-area: row1;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.section2 {
+  grid-area: row2;
+}
+
+.section3 {
+  grid-area: row3;
+}
+
+.section4 {
+  grid-area: row4;
+}
+
+.section5 {
+  grid-area: row5;
+}
