@@ -16,10 +16,11 @@ class NavBar extends HTMLElement {
                 <li class="hideOnMobile"><a href="om_foreningen.html">Om Foreningen</a></li>
                 <li class="hideOnMobile"><a href="bakgrunn.html">Om Oss</a></li>
                 <li class="hideOnMobile"><a href="bilder.html">Bilder</a>
-                    <ul class="dropdown" style="border-bottom-right-radius: 0.5rem; border-bottom-left-radius: 0.5rem;">
+                    <ul class="dropdown" style="border-bottom-right-radius: 0.5rem; border-bottom-left-radius: 0.5rem; display:none;">
                         <li><a href="sending1.html">Okt-2024</a></li>
                         <li><a href="sending2.html">Nov-2024</a></li>
                         <li><a href="sending3.html">Des-2024</a></li>
+                        <li><a href="sending4.html">Apr-2025</a></li>
                     </ul>
                 </li>
 
