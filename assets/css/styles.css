@@ -192,7 +192,6 @@ img:hover {
 .image-stack {
   position: relative; /* Ensure stacking context */
   width: max-content; /* Adjust to content width */
-  margin-left: 2rem;
 }
 
 .stacked-image {
@@ -304,7 +303,7 @@ section {
   width: 250px;
   height: 100vh;
   background-color: #333;
-  z-index: 999;
+  z-index: 4;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 1);
   display: none;
   flex-direction: column;
