@@ -206,13 +206,13 @@ img:hover {
 
 .image-bottom {
   top: 20px; /* Adjust vertical shift */
-  left: 80px; /* Adjust horizontal shift */
+  left: 135px; /* Adjust horizontal shift */
   z-index: 1; /* Stacking order */
 }
 
 .image-middle {
   top: 10px;
-  left: 40px;
+  left: 67px;
   z-index: 2;
 }
 
@@ -227,9 +227,23 @@ img:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-@media (max-width: 950px) {
-  .image-stack {
-    margin-left: 4rem;
+@media (min-width: 850px) and (max-width: 950px) {
+  .image-bottom {
+    top: 20px; /* Adjust vertical shift */
+    left: 240px; /* Adjust horizontal shift */
+    z-index: 1; /* Stacking order */
+  }
+
+  .image-middle {
+    top: 10px;
+    left: 160px;
+    z-index: 2;
+  }
+
+  .image-top {
+    top: 0px;
+    left: 80px;
+    z-index: 3; /* Ensures it’s on top */
   }
 }
 
