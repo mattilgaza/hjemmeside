@@ -45,14 +45,18 @@ section {
 
 .section1 {
   grid-area: row1;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 100;
 }
 
 .section2 {
   grid-area: row2;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 100;
 }
 
 .section3 {
