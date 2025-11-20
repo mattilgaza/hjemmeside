@@ -12,7 +12,7 @@ class NavBar extends HTMLElement {
             </ul>
             <ul>
                 <a class="nav-brand" href="index.html">Mat til Gaza</a>
-                <li class="hideOnMobile"><a href="doner.html">Gi Her</a></li>
+                <li class="hideOnMobile"><a href="doner.html">Vipps</a></li>
                 <li class="hideOnMobile"><a href="om_foreningen.html">Om Foreningen</a></li>
                 <li class="hideOnMobile"><a href="bakgrunn.html">Om Oss</a></li>
                 <li class="hideOnMobile"><a href="bilder.html">Bilder</a>
