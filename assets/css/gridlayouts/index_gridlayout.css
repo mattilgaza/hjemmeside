@@ -8,7 +8,9 @@
     "row2"
     "row3"
     "row4"
-    "row5";
+    "row5"
+    "row6"
+    "row7";
 }
 
 .section1 {
@@ -33,4 +35,12 @@
 
 .section5 {
   grid-area: row5;
+}
+
+.section6 {
+  grid-area: row6;
+}
+
+.section7 {
+  grid-area: row7;
 }
